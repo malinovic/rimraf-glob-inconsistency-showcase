@@ -1,0 +1,31 @@
+{
+  "name": "rimraf-glob-bug-showcase",
+  "version": "1.0.0",
+  "description": "This is a pure bug showcasing repository for the all famous \"rimraf\" npm package",
+  "main": "src/index.js",
+  "scripts": {
+    "prestart": "npm run remove-all",
+    "start": "node src/index.js",
+    "remove-glob": "rimraf generated/*.js",
+    "remove-all": "rimraf generated"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malinovic/rimraf-glob-bug-showcase.git"
+  },
+  "keywords": [
+    "rimraf",
+    "bug",
+    "glob"
+  ],
+  "author": "Danijel Malinovic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/malinovic/rimraf-glob-bug-showcase/issues"
+  },
+  "homepage": "https://github.com/malinovic/rimraf-glob-bug-showcase#readme",
+  "dependencies": {
+    "rimraf": "^5.0.5",
+    "touch": "^3.1.0"
+  }
+}

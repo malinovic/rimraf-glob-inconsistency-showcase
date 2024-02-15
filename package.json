@@ -1,12 +1,12 @@
 {
   "name": "rimraf-glob-bug-showcase",
   "version": "1.0.0",
-  "description": "This is a pure bug showcasing repository for the all famous \"rimraf\" npm package",
+  "description": "This is a pure inconsistency showcasing repository for the all famous \"rimraf\" npm package",
   "main": "src/index.js",
   "scripts": {
-    "prestart": "npm run remove-all",
-    "start": "node src/index.js",
-    "remove-glob": "rimraf generated/*.js",
+    "pretest": "npm run remove-all && node src/index.js",
+    "test": "rimraf generated/*.js",
+    "test:fixed": "rimraf generated/*.js --glob",
     "remove-all": "rimraf generated"
   },
   "repository": {
@@ -25,7 +25,6 @@
   },
   "homepage": "https://github.com/malinovic/rimraf-glob-bug-showcase#readme",
   "dependencies": {
-    "rimraf": "^5.0.5",
-    "touch": "^3.1.0"
+    "rimraf": "5.0.5"
   }
 }

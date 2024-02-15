@@ -8,7 +8,7 @@ The inconsistency revolves around the handling of glob patterns when used within
 
 1. Clone this repository locally.
 2. Navigate to the repository directory.
-2. Install dependencies using `npm ci`.
+3. Install dependencies using `npm ci`.
 4. Execute the testing scripts using `npm test` and `npm run test:fixed`.
 5. Observe and compare the results to identify the inconsistency.
 
